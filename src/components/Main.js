@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import {BrowserRouter, Route, Routes, Navigate, useNavigate} from 'react-router-dom';
 import { Card } from "./Card";
 import { CurrentUserContext } from "../contexts/CurrentUserContext";
 

@@ -1,0 +1,10 @@
+.content{
+    padding-top: 36.25px;
+}
+
+@media screen and (max-width: 918px){
+    .content{
+        margin-left: clamp(0px,calc(19px - (100vw - 880px)/2),19px);
+        margin-right: clamp(0px,calc(19px - (100vw - 880px)/2),19px);
+    }
+}

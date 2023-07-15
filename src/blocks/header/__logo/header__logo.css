@@ -1,0 +1,10 @@
+.header__logo{
+    height: min(33px, 7.625vw);
+}
+
+@media screen and (max-width: 934px){
+    .header__logo{
+        margin-left: clamp(0px,calc(27px - (100vw - 880px)/2),27px);
+    }
+    
+}

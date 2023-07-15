@@ -1,0 +1,16 @@
+.profile__name{
+    margin: 0;
+    font-size: clamp(27px,3.3vw,42px);
+    line-height: clamp(33px,3.7vw,48px);
+    font-weight: 500;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 500px){
+    .profile__name{
+        text-align: center;
+    }
+}

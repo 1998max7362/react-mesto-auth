@@ -1,0 +1,11 @@
+.profile{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+@media screen and (max-width: 500px){
+    .profile{
+        flex-direction: column;
+    }
+}

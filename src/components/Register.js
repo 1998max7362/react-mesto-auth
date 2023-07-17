@@ -12,7 +12,6 @@ export const Register = () => {
   const navigate = useNavigate();
 
   const onsubmit = async ({ email, password }) => {
-    console.log("{email, password}", { email, password });
     try {
       const res = await auth.register({ email, password });
       setResult(true);

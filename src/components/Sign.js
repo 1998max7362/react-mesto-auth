@@ -36,7 +36,6 @@ export const Sign = ({ title, buttonTitle, children, handleSubmit  }) => {
   const formik = useFormik({
     initialValues,
     onSubmit: (values) => {
-      // console.log('values',values)
       handleSubmit(values);
     },
     validationSchema,

@@ -7,7 +7,6 @@ class Auth {
   }
 
   async register({ email, password }) {
-    debugger
     const res = await fetch(`${this.baseUrl}/signup`, {
       headers: this.headers,
       method: "POST",

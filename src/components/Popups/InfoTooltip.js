@@ -7,7 +7,6 @@ export const InfoTooltip = ({ name, isOpen, onClose, result, resultText }) => {
     <Popup name={name} isOpen={isOpen} onClose={onClose}>
       <div className="info-tooltip">
         <img src={result? succesIcon : errorIcon}  className="info-tooltip__icon" alt='Иконка ответа на регистрацию' />
-        {/* <p className="info-tooltip__text">{result? 'Вы успешно зарегистрировались!': 'Что-то пошло не так. Попробуйте еще раз'}</p> */}
         <p className="info-tooltip__text">{resultText}</p>
       </div>
     </Popup>

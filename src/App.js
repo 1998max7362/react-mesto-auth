@@ -4,7 +4,6 @@ import {
   Routes,
   useNavigate,
 } from "react-router-dom";
-import "./App.css";
 import { Footer } from "./components/Footer";
 import { Register } from "./components/Register";
 import { AuthorizedMain } from "./components/AuthorizedMain";

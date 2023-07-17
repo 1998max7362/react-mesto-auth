@@ -2,12 +2,18 @@ import { Sign } from "./Sign";
 import { InfoTooltip } from "./Popups/InfoTooltip";
 import { auth } from "../utils/Auth";
 import { Header } from "./Header";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export const Register = () => {
   const [isInfoTooltipOpen, setInfoTooltipOpen] = useState(false);
   const [result, setResult] = useState(false);
+
+  const resultText = useMemo(() => {
+    return result
+      ? "Вы успешно зарегистрировались!"
+      : "Что-то пошло не так. Попробуйте еще раз";
+  }, [result]);
 
   const navigate = useNavigate();
 
@@ -55,6 +61,7 @@ export const Register = () => {
           setInfoTooltipOpen(false);
         }}
         result={result}
+        resultText={resultText}
       />
     </>
   );

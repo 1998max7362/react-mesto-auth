@@ -14,7 +14,7 @@ export const Popup = ({ name, children, isOpen, onClose }) => {
     document.addEventListener("keydown", handleESC);
 
     return () => document.removeEventListener("keydown", handleESC);
-  }, [isOpen]);
+  }, [isOpen,onClose]);
 
 
   return (

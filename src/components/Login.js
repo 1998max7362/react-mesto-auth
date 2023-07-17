@@ -21,6 +21,7 @@ export const Login = ({handleTokenCheck}) => {
     }
   };
 
+
   return (
     <>
       <Header>
@@ -37,6 +38,7 @@ export const Login = ({handleTokenCheck}) => {
         isOpen={isInfoTooltipOpen}
         onClose={() => setInfoTooltipOpen(false)}
         result={false}
+        resultText={"Ну вот и стоило выходить? Теперь вспоминай данные от своей учётки..."}
       />
     </>
   );

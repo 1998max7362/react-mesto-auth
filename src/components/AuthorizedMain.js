@@ -112,22 +112,18 @@ export const AuthorizedMain = ({handleCurrentUserInfoChange,handleTokenCheck}) =
 
   const handleEditAvatarClick = () => {
     setEditAvatarPopupOpen(true);
-    addKeyDownListener();
   };
 
   const handleEditProfileClick = () => {
     setEditProfilePopupOpen(true);
-    addKeyDownListener();
   };
 
   const handleAddPlaceClick = () => {
     setAddPlacePopupOpen(true);
-    addKeyDownListener();
   };
 
   const handleShowApprovePopup = () => {
     setApprovePopupOpen(true);
-    addKeyDownListener();
   };
 
   const closeAllPopups = () => {
@@ -136,27 +132,12 @@ export const AuthorizedMain = ({handleCurrentUserInfoChange,handleTokenCheck}) =
     setAddPlacePopupOpen(false);
     setApprovePopupOpen(false);
     setSelectedCard({});
-    removeKeyDownListener();
   };
 
   const handleCardClick = (card) => {
     setSelectedCard(card);
-    addKeyDownListener();
   };
 
-  const handleEscClose = (evt) => {
-    if (evt.key === "Escape") {
-      closeAllPopups();
-    }
-  };
-
-  const addKeyDownListener = () => {
-    document.addEventListener("keydown", handleEscClose);
-  };
-
-  const removeKeyDownListener = () => {
-    document.removeEventListener("keydown", handleEscClose);
-  };
 
   const onExit = () =>{
     localStorage.removeItem('token');
